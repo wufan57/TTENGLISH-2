@@ -1,0 +1,22 @@
+<!-- banner -->
+<view class="banner">
+  <image class="avatar" src="/static/images/mryh.png"></image>
+  <text>请登录</text>
+</view>
+
+<!-- 列表 -->
+<view class="studylist" wx:for="{{studylist}}" wx:for-item="v">
+  <view class="worditem">
+    <view class="wordleft">
+      <!-- 如果播放中，图片变成透明 -->
+      <image src="{{v.imgsrc}}" mode="scaleToFill" bindtap='audioPlay' data-key="{{index}}" data-name="{{v.ename}}"  wx:if="{{v.status==true}}" style="opacity:{{0.3}}"></image>
+      <!-- 播放完成图片恢复为不透明 -->
+      <image src="{{v.imgsrc}}" mode="scaleToFill" bindtap='audioPlay' data-key="{{index}}" data-name="{{v.ename}}"  wx:else></image>
+      <text>{{v.cname}}</text>
+    </view>
+    <view class="wordright">
+      <image src="/static/images/yxh.png" mode="scaleToFill"></image>
+      <image src="/static/images/sc.png" mode="scaleToFill"></image>
+    </view>
+  </view>
+</view>

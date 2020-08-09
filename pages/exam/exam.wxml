@@ -1,0 +1,25 @@
+<!-- banner -->
+<view class="banner">
+  <image class="avatar" src="/static/images/mryh.png"></image>
+  <text>请登录</text>
+</view>
+
+<!-- 选择已掌握或已关注 -->
+<view class='parameter-wrap'>
+  <block wx:for="{{parameter}}" wx:key="parameter">
+    <text class="checked_parameter" wx:if="{{item.status}}" bindtap='parameterTap' data-id='{{item.id}}'>{{item.name}}</text>
+    <text wx:else bindtap='parameterTap' data-id='{{item.id}}'>{{item.name}}</text>
+  </block>
+</view>
+
+<view class="examlist">
+  <view class="examitem" wx:for="{{examlist}}" wx:for-item="v">
+    <view class="examleft">
+        <image src="/static/images/lb.png" mode="scaleToFill" bindtap='audioPlay' data-key="{{index}}" data-name="{{v.name}}"></image>
+    </view>
+    <view class="examright">
+        <text>{{v.name}}</text>
+        <image src="{{v.imgsrc}}" mode="scaleToFill"></image>
+    </view>
+  </view>
+</view>

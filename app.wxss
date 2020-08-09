@@ -1,0 +1,29 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+/* --------------------------------- 头像 ---------------------------------*/
+.banner {
+  /* background-color: #add; */
+  height: 100rpx;
+  display: flex;
+  /* 子元素按行排列 */
+  flex-direction: row;     
+  /* 子元素从左到右排列 */
+  justify-content: left;
+  /* 子元素上下为居中排列 */
+  align-items: center;
+}
+
+.banner .avatar{
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50%;
+}

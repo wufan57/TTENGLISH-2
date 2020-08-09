@@ -1,0 +1,32 @@
+<!-- banner -->
+<view class="banner">
+  <image class="avatar" src="/static/images/mryh.png"></image>
+  <text>请登录</text>
+</view>
+
+<!-- <view style="width:750rpx; height:300rpx; background-color:#ddd">
+test
+</view> -->
+<!-- 轮播图 -->
+<!-- <swiper autoplay="{{true}}" indicator-dots="{{true}}" indicator-active-color="#fff">
+    <swiper-item>
+      <image src="/static/images/banner.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/static/images/xzpq.jpg"></image>
+    </swiper-item>
+</swiper> -->
+
+<!-- 大分类 -->
+<view class="category">
+    <scroll-view scroll-x="true" class="scrollx" >
+      <view class="item" wx:for="{{category}}" wx:for-item="v">
+        <view class="itemstle">
+           <navigator url="/pages/study/study?categoryId={{v.id}}">
+            <image src="{{v.imgsrc}}" mode="scaleToFill"></image>
+           </navigator>
+           <text>{{v.name}}</text>
+        </view>  
+      </view>  
+  </scroll-view>
+</view>

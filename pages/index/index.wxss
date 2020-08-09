@@ -1,0 +1,42 @@
+/* pages/index/index.wxss */
+
+/* --------------------------------- 大分类 ---------------------------------*/
+.category{
+  background-color: #add;
+  display: flex; 
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-end;
+  height: 500rpx;
+}
+
+.category .scrollx{
+  white-space: nowrap; 
+  display: flex
+}
+
+.category .scrollx .item{
+  display: inline-block;
+  height: 400rpx;
+  width: 400rpx;
+  margin-left: 30rpx;
+}
+
+.category .scrollx .item .itemstle{
+  /* background-color: lightsalmon; */
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  align-items: center;
+}
+
+.category .scrollx .item image{
+  height: 300rpx;
+  width: 300rpx;
+  border-radius: 50%;
+}
+
+.category .scrollx .item text{
+  height: 70rpx;
+}
+

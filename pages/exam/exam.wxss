@@ -1,0 +1,63 @@
+/* pages/exam/exam.wxss */
+.parameter-wrap{
+  display: flex; 
+  flex-direction: row; 
+  align-items: center;
+   /* 子元素左右排列 */
+  justify-content: left;
+}
+
+.checked_parameter{
+  background-color: rgb(94, 218, 63);
+  padding: 3px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.examlist{
+  display: flex; 
+  flex-direction: column;     
+}
+
+.examlist .examitem {
+  height: 300rpx;
+  display: flex; 
+  flex-direction: row; 
+  align-items: center;
+  justify-content: space-around;
+  border:1rpx solid red;
+  padding-bottom: 10rpx;
+}
+
+.examlist .examitem .examleft{
+  /* background-color: grey; */
+  height: 300rpx;
+  width: 300rpx;
+  /* 选择flex排列 */
+  display: flex; 
+  /* 主列为竖列 */
+  flex-direction: column;
+  /* 主列居中 */
+  justify-content:center;
+  /* 副列居中 */
+  align-items:center;
+}
+
+.examlist .examitem .examleft image {
+  height: 100rpx;
+  width: 100rpx;
+}
+
+.examlist .examitem .examright{
+  /* background-color: grey; */
+  height: 300rpx;
+  width: 260rpx;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+.examlist .examitem .examright image {
+  height: 260rpx;
+  width: 260rpx;
+}

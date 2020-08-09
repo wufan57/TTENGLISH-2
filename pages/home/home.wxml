@@ -1,0 +1,17 @@
+<!--pages/home/home.wxml-->
+<view class="userlist">
+
+   <view class="userblock">
+      <image class="avatar" src="/static/images/mryh.png"></image>
+      <view class="logintext">
+        <navigator url="/pages/auth/auth">登录</navigator>|<navigator url="/pages/auth/auth">注册</navigator>
+      </view>
+    </view>
+   <view>
+     <button type="primary">已掌握的单词</button>
+   </view>
+   <view>
+     <button type="default">已收藏的单词</button>
+   </view>
+
+</view>

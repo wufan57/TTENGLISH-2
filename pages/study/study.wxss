@@ -1,0 +1,46 @@
+/* pages/study/study.wxss */
+/* 纵向排列 */
+.studylist{
+  display: flex; 
+  flex-direction: column;     
+}
+
+.studylist .worditem {
+  height: 300rpx;
+  /* background-color: darkgrey; */
+  display: flex; 
+  flex-direction: row; 
+  align-items: center;
+   /* 子元素左右排列 */
+  justify-content: space-between;
+  border:1rpx solid red;
+}
+
+.studylist .worditem .wordleft{
+  /* background-color: grey; */
+  height: 300rpx;
+  width: 260rpx;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+.studylist .worditem .wordleft image {
+  height: 260rpx;
+  width: 260rpx;
+}
+
+/* 右边我已会和收藏按钮 */
+.studylist .worditem .wordright{
+  height: 300rpx;
+  width: 400rpx;
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.studylist .worditem .wordright image {
+  height: 100rpx;
+  width: 100rpx;
+}

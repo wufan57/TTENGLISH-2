@@ -1,0 +1,33 @@
+/* pages/home/home.wxss */
+
+.userlist{
+  display: flex; 
+  flex-direction: column;     
+}
+
+.userblock{
+  /* background-color: grey; */
+  height: 500rpx;
+  /* 选择flex排列 */
+  display: flex; 
+  /* 主轴为横 */
+  flex-direction: row;
+  /* 主轴居中 */
+  justify-content:center;
+  /* 副轴（竖列）排在底部 */
+  align-items:flex-end;
+  margin-bottom: 100rpx;
+}
+
+.userblock .avatar{
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50%;
+}
+
+.userblock .logintext{
+  height: 100rpx;
+  display: flex; 
+  flex-direction: row;
+  align-items:center;
+}
